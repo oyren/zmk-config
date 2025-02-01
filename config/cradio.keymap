@@ -4,6 +4,11 @@
 /* activate bluetooth */
 #define CONFIG_WIRELESS
 
+/* Utilize unicode inputs on Linux systems (Ctrl+Shift+U)
+* See https://github.com/urob/zmk-helpers/blob/main/README.md#unicode-characters-and-language-collection
+* Must be done before the include of the base.keymap, which includes helper.h and unicode-chars.
+*/
+#define HOST_OS 1
 /* source the main keymap */
 #include "base.keymap"
 
